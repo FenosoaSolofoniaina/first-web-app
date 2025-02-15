@@ -1,0 +1,10 @@
+{
+    "title" : "IAnatra",
+    "type" : "brand",
+    "image" : {
+        "src" : "https://cdn-icons-png.flaticon.com/512/4616/4616821.png",
+        "alt" : "Logo de IAnatra",
+        "width" : 50,
+        "height" : 50
+    }
+}

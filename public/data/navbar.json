@@ -1,0 +1,33 @@
+[
+        
+    {
+        "name" : "home",
+        "title" : "Accueil",
+        "url" : "/#",
+        "isActive" : false
+    },
+    {
+        "name" : "products",
+        "title" : "Produits",
+        "url" : "/#products",
+        "isActive" : true
+    },
+    {
+        "name" : "enterprise",
+        "title" : "Entreprise",
+        "url" : "/#enterprise",
+        "isActive" : false
+    },
+    {
+        "name" : "projects",
+        "title" : "Nos Projets",
+        "url" : "/#projects",
+        "isActive" : false
+    },
+    {
+        "name" : "about",
+        "title" : "A propos",
+        "url" : "/#about",
+        "isActive" : false
+    }
+]

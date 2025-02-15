@@ -1,0 +1,47 @@
+[
+    {
+        "index" : 0,
+        "alt" : "IA on hand",
+        "image" : {
+            "url" : "https://cdn-icons-png.freepik.com/512/9626/9626677.png",
+            "width" : 500,
+            "height" : 500
+            
+        },
+        "thumbnail" : {
+            "url" : "https://cdn-icons-png.freepik.com/512/9626/9626677.png",
+            "width" : 100,
+            "height" : 100
+        }
+    },
+    {
+        "index" : 1,
+        "alt" : "Inteligencia Artificial",
+        "image" : {
+            "url" : "https://www.edutic.org/wp-content/uploads/2023/05/research-ia.png",
+            "width" : 500,
+            "height" : 500
+            
+        },
+        "thumbnail" : {
+            "url" : "https://www.edutic.org/wp-content/uploads/2023/05/research-ia.png",
+            "width" : 100,
+            "height" : 100
+        }
+    },
+    {
+        "index" : 2,
+        "alt" : "Git Hub on dark mode",
+        "image" : {
+            "url" : "https://static.vecteezy.com/system/resources/previews/027/075/800/original/github-logo-transparent-free-png.png",
+            "width" : 500,
+            "height" : 500
+            
+        },
+        "thumbnail" : {
+            "url" : "https://static.vecteezy.com/system/resources/previews/027/075/800/original/github-logo-transparent-free-png.png",
+            "width" : 100,
+            "height" : 100
+        }
+    }
+]
