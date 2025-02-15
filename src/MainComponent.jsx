@@ -79,6 +79,7 @@ export function MyMainContent() {
 
     let [loading, setLoading] = useState(true);
     let [imageData, setImageData] = useState([]);
+    let [details, setDetails] = useState([]);
 
     useEffect( () => {
         setLoading(true);
@@ -86,8 +87,13 @@ export function MyMainContent() {
             let data = await fetchDataFrom('/media/images/images.json');
             setImageData(data);
         }
+        let loadDetails = async () => {
+            let data = await fetchDataFrom('/data/details.json');
+            setDetails(data);
+        }
 
         loadImages();
+        loadDetails();
         setLoading(false)
 
     }, []);
@@ -104,7 +110,11 @@ export function MyMainContent() {
                 {/* Show informations */}
                 <div className="mx-2 col">
                     <ShowMainInformation />
-                    <ShowDetails />
+                    
+                    {/* Show details informations */}
+                    {
+                    <ShowDetails detailsData={details}/>
+                    }
                 </div>
             </div>
         </section>

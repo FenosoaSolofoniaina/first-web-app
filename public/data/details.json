@@ -1,0 +1,17 @@
+[
+    {
+        "name" : "description",
+        "title" : "Description",
+        "text" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur nihil dolores maxime unde accusamus hic fugit aspernatur amet ex distinctio necessitatibus laudantium cum fugiat, eius ullam saepe assumenda? Odit, atque!"
+    },
+    {
+        "name" : "details",
+        "title" : "Details",
+        "text" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur nihil dolores maxime unde accusamus hic fugit aspernatur amet ex distinctio necessitatibus laudantium cum fugiat, eius ullam saepe assumenda? Odit, atque!"
+    },
+    {
+        "name" : "special-notes",
+        "title" : "Notes Spécifiques",
+        "text" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur nihil dolores maxime unde accusamus hic fugit aspernatur amet ex distinctio necessitatibus laudantium cum fugiat, eius ullam saepe assumenda? Odit, atque!"
+    }
+]

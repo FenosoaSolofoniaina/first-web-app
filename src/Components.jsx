@@ -63,40 +63,36 @@ export function ShowMainInformation() {
 }
 
 
-export function ShowDetails() {
+export function ShowDetails({ detailsData}) {
+
+    let [currentIndex, setCurrentIndex] = useState(0);
 
     return (
         <div className="accordion accordion-flush" id="page-details">
-            <div className="accordion-item">
-                <h2 className="accordion-header">
-                    <button className="accordion-button fw-bold" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#page-description" aria-expanded="true" aria-controls="page-description">
-                        Description
-                    </button>
-                </h2>
-                <div id="page-description" className="accordion-collapse collapse show" data-bs-parent="#page-details">
-                    <p className="accordion-body justify-start fw-normal">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Consectetur nihil dolores maxime unde accusamus hic fugit aspernatur amet ex distinctio necessitatibus
-                        laudantium cum fugiat, eius ullam saepe assumenda? Odit, atque!
-                    </p>
-                </div>
-            </div>
-            <div className="accordion-item">
-                <h2 className="accordion-header">
-                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#spec-details" aria-expanded="false" aria-controls="spec-details">
-                        Details
-                    </button>
-                </h2>
-                <div id="spec-details" className="accordion-collapse collapse" data-bs-parent="#page-details">
-                    <p className="accordion-body justify-start">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Consectetur nihil dolores maxime unde accusamus hic fugit aspernatur amet ex distinctio necessitatibus
-                        laudantium cum fugiat, eius ullam saepe assumenda? Odit, atque!
-                    </p>
-                </div>
-            </div>
+            {
+                detailsData.map( (detail, index) => {
+                    let [boldClass, showClass, expanded] = (currentIndex===index) ? 
+                                                    ['fw-bold', 'show', true] :
+                                                    ['', '', false]
+
+                    return (
+                        <div className="accordion-item" data-index={index}>
+                            <h2 className="accordion-header">
+                                <button className={"accordion-button " + boldClass} type="button" data-bs-toggle="collapse"
+                                        data-bs-target={`#${detail.name}`} aria-expanded={expanded} aria-controls={detail.name}
+                                        onClick={() => setCurrentIndex(index)} >
+                                    {detail.title}
+                                </button>
+                            </h2>
+                            <div id={detail.name} className={"accordion-collapse collapse " + showClass} data-bs-parent="#page-details">
+                                <p className="accordion-body justify-start fw-normal">
+                                    {detail.text}
+                                </p>
+                            </div>
+                        </div>
+                    );
+                })
+            }
         </div>
     );
 }
